@@ -168,7 +168,7 @@ for query_date in date_list:
         'startDate': query_date,
         'endDate': query_date,
         'dimensions': query_dimensions,
-        'rowLimit': 1000
+        'rowLimit': 10000
     }
     result_rows = []
     result = search_console.searchanalytics().query(siteUrl=config["google_property"], body=request).execute()
