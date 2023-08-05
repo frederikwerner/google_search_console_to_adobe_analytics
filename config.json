@@ -1,8 +1,8 @@
 {
-    "apiKey": "653c8fcbecfc4c83a08b67912089d30b",
+    "apiKey": "1234567890",
     "technicalAccountId": "870B24F764627EB70A495C89@techacct.adobe.com",
     "orgId": "2DD68785558BD0AB7F000101@AdobeOrg",
-    "secret": "p8e-Jyzv4U1btYX8JUg7pTKkDYnINaROtoOS",
+    "secret": "0987654321",
     "google_property": "https://www.website.com/",
     "data_source_name": "Google Search Console Import",
     "report_suite_id": "orgreportsuiteid",
