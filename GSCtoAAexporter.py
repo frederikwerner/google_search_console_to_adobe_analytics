@@ -5,7 +5,6 @@ import jwt
 import re
 import httplib2
 import json
-import googleapiclient
 
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
