@@ -3,4 +3,6 @@ Small Script to import Google Search performance data to Adobe Analytics. Requir
 
 For usage instructions see https://www.fullstackanalyst.io/blog/adobe-analytics/importing-organic-google-search-data-to-adobe-analytics-with-a-single-script/?r=g
 
-Created by Frederik Werner (https://www.frederikwerner.de/?r=g)
+Configuration has moved to a dedicated config file since initial release, thank you @chip902!
+
+Initially created by Frederik Werner (https://www.frederikwerner.de/?r=g)
