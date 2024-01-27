@@ -4,38 +4,19 @@ import sys
 import jwt
 import re
 import httplib2
+import json
 
-from apiclient.discovery import build
-from apiclient.errors import HttpError
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
 from oauth2client.tools import argparser, run_flow
 
-config = {
-"apiKey":"3ec159485be87ed8fk6f9g37j79d67153b31e6",
-"technicalAccountId":"6JCD048F50A6495F35C8D9D4D2@techacct.adobe.com",
-"orgId":"25DB24210614E744C980A8A7@AdobeOrg",
-"secret":"d033109-fd7a71ba2-489-9cf455-f2f87f4298ab",
-"google_property":"https://www.website.com/",
-"data_source_name": "Google Search Console Import",
-"report_suite_id": 'orgreportsuiteid',
-"job_prefix": "GSC-Import",
-"lookback_days": 100,
-"type_evar":"197",
-"url_evar":"198",
-"keyword_evar":"199",
-"ctr_event":"997",
-"clicks_event":"998",
-"impressions_event":"999",
-"position_event":"1000",
-"key":b'-----BEGIN PRIVATE KEY-----\nMIIEvAIBADAN7wGu1P3aNA3yjqGA==\n-----END PRIVATE KEY-----',
+# Open and load the configuration file
+with open('config.json', 'r') as file:
+    config = json.load(file)
 
-"metascopes":"ent_analytics_bulk_ingest_sdk",
-"imsHost":"ims-na1.adobelogin.com",
-"imsExchange":"https://ims-na1.adobelogin.com/ims/exchange/jwt",
-"discoveryUrl":"https://analytics.adobe.io/discovery/me"
-}
-
+config["key"] = bytes(config["key"], 'utf-8')
 base = datetime.datetime.today()
 date_list = [(base - datetime.timedelta(days=x)).strftime("%Y-%m-%d") for x in range(config["lookback_days"])]
 

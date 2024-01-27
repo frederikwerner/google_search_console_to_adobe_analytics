@@ -1,0 +1,23 @@
+{
+    "apiKey": "1234567890",
+    "technicalAccountId": "870B24F764627EB70A495C89@techacct.adobe.com",
+    "orgId": "2DD68785558BD0AB7F000101@AdobeOrg",
+    "secret": "0987654321",
+    "google_property": "https://www.website.com/",
+    "data_source_name": "Google Search Console Import",
+    "report_suite_id": "orgreportsuiteid",
+    "job_prefix": "GSC-Import",
+    "lookback_days": 100,
+    "type_evar": "197",
+    "url_evar": "198",
+    "keyword_evar": "199",
+    "ctr_event": "997",
+    "clicks_event": "998",
+    "impressions_event": "999",
+    "position_event": "1000",
+    "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADAN7wGu1P3aNA3yjqGA==\n-----END PRIVATE KEY-----",
+    "metascopes": "ent_analytics_bulk_ingest_sdk",
+    "imsHost": "ims-na1.adobelogin.com",
+    "imsExchange": "https://ims-na1.adobelogin.com/ims/exchange/jwt",
+    "discoveryUrl": "https://analytics.adobe.io/discovery/me"
+  }
